@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <style>
+    
+        html {
+            height: 100%;
+            cursor: url(https://ani.cursors-4u.net/nature/nat-11/nat1037.cur), auto !important;
+        }
+        
+        body {
+            background: url('bg/deepwater.gif');
+            width: 600px;
+            height: 95%;
+            margin: auto;
+            font-family: comicsans;
+            font-size: 1.4em;
+            letter-spacing: 2px;
+            color: #00db21;
+            
+            display: grid;
+            grid-template-columns: [leftline] 1fr [line2] 1fr [midline] 1fr [line4] 1fr [rightline];
+            grid-template-rows: [topline] 260px [line2] auto [line3] 200px [bottomline];
+            grid-template-areas: 
+                "header header header header"
+                "left mid1 mid2 right"
+                "end end end end";
+            
+        }
+        
+        #s-m-t-tooltip{
+            /* basic */
+            max-width: 250px;
+            z-index: 999999 !important;
+            margin: 24px 14px 7px 12px;
+            /* style and design */
+            padding: 2px 8px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .about {
+            grid-area: header;
+            position: relative;
+        }
+        
+        .end {
+            grid-area: end;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        a:hover {
+            color: greenyellow;
+        }
+        
+        /* columns */
+        
+        .column {
+        }
+        
+        .left {
+            grid-area: left;
+        }
+        
+        .left img {
+            transform: scaleX(-1);
+        }
+        
+        .leftedge {
+            height: 80px;
+            position: relative;
+            margin: 0 80px 0 0;
+        }
+        
+        .rightedge {
+            height: 80px;
+            position: relative;
+            margin: 0 0 0 80px;
+        }
+        
+        .mid1 {
+            grid-area: mid1;
+        }
+        
+        .mid1 img {
+            transform: scaleX(-1);
+        }
+        
+        .mid2 {
+            grid-area: mid2;
+        }
+        
+        .right {
+            grid-area: right;
+        }
+        
+        /* frogs and lilys */
+        
+        img.froge {
+            position: absolute;
+            max-height: 32px;
+            margin-left: 20px;
+            z-index: 2;
+        }
+        
+        img.lily {
+            position: absolute;
+            z-index: -2;
+        }
+        
+    </style>
+    
+    
+<!-- Mirrored from leviathren.neocities.org/swamp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 May 2025 16:19:10 GMT -->
+<head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="icon" type="image/png" href="decor/eyeballfrog.png">
+        <title>OUR SWAMP</title>
+        
+    </head>
+    
+    <body>
+        
+        <div class="about">
+            <h1>RIBBIT</h1>
+            <p>Where are all these frogs coming from?</p>
+            <p>This funny looking guy <img src="decor/froge.png"> is a <a href="https://zeldawiki.wiki/wiki/Eyeball_Frog" target="_blank">sprite of Eyeball Frog from Ocarina of Time</a></p>
+            <img style="position: absolute; top: 10%; left: -220px;" src="decor/eyeballfrog.png">
+        </div>
+    
+        <div class="column left">
+            
+            <div class="leftedge">
+                <a title="LEVIATHREN" class="smt-current-element" href="home.html" target="_blank"><img class="froge smt-current-element" src="decor/frogelevi.png"></a>
+                <img class="lily" src="decor/lilypad.png">
+            </div>
+            
+            <div class="rightedge">
+                <a title="Coby Cat" class="smt-current-element" href="https://cobycat.neocities.org/" target="_blank"><img class="froge smt-current-element" src="decor/frogefroby.png"></a>
+                <img class="lily" src="decor/lilypad.png">
+            </div>
+		
+            <div class="leftedge">
+                <a title="Rodrick" class="smt-current-element" href="https://me.shroom.ink/" target="_blank"><img class="froge smt-current-element" src="decor/frogerodrick.png"></a>
+                <img class="lily" src="decor/lilypad.png">
+            </div>
+            
+        </div>
+        
+        <div class="column mid1">
+            
+            <div class="leftedge">
+                <a title="Mx Autumn" class="smt-current-element" href="https://photogabble.co.uk/" target="_blank"><img class="froge" src="decor/frogeautumn.png"></a>
+                
+                <img class="lily" src="decor/lilypad.png">
+            </div>
+            
+            <div class="rightedge">
+                <a title="Trans Rats!" class="smt-current-element" href="https://transrats.neocities.org/" target="_blank"><img class="froge" src="decor/frogejay.png"></a>
+                
+                <img class="lily" src="decor/lilypad.png">
+            </div>
+            
+        </div>
+        
+        <div class="column mid2">
+            
+            <div class="leftedge">
+                <a title="Sanguine Royal" class="smt-current-element" href="https://sanguineroyal.com/" target="_blank"><img class="froge smt-current-element" src="decor/frogekrish.jpg"></a>
+                <img class="lily" src="decor/lilypad.png">
+            </div>
+            
+            <div class="rightedge">
+                <a title="Queen of Arms" class="smt-current-element" href="https://queenofarms.neocities.org/" target="_blank"><img class="froge smt-current-element" src="decor/frogequeenofarms.png"></a>
+                <img class="lily" src="decor/lilypad.png">
+            </div>
+            
+        </div>
+        
+        <div class="column right">
+            
+            <div class="leftedge">
+                <a title="Velvet Boutique"  class="smt-current-element" href="https://velvet-boutique.neocities.org/" target="_blank"><img class="froge smt-current-element" src="decor/frogevelvet.png"></a>
+                <img class="lily" src="decor/lilypad.png">
+            </div>
+            
+            <div class="rightedge">
+                <a title="Choiyoona"  class="smt-current-element" href="https://choiyoona.neocities.org/" target="_blank"><img class="froge smt-current-element" src="decor/frogechoiyoona.png"></a>
+                <img class="lily" src="decor/lilypad.png">
+            </div>
+            
+        </div>
+        
+        <div class="end">
+            <a href="https://photogabble.co.uk/button-board/" target="_blank"><img src="btns/frogebtn.png"></a> a button, if you want to link this page, for some strange reason. Thank you <a href="https://photogabble.co.uk/froge/" target="_blank">Mx Autumn</a> for the lovely button! ribbit
+        <p>send me your froge png either on discord (@leviathren) or anywhere on my neocities if you want to chill in the swamp. we're just a silly pond of frogs :)</p></div>
+        
+        <script src="../ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="../static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+<script>
+							(function($){
+							$(document).ready(function(){
+							$("[title]").style_my_tooltips({
+							tip_follows_cursor: true,
+							tip_delay_time:100,
+							tip_fade_speed:300,
+							attribute:"title"
+							});
+							});
+							})(jQuery);
+</script>
+    </body>
+    
+
+<!-- Mirrored from leviathren.neocities.org/swamp by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 May 2025 16:19:14 GMT -->
+</html>

@@ -1,0 +1,523 @@
+:root {
+    --bg: #000000;
+    --bgpic: url(bg/blacktexture.jpg);
+    --mainbg: url(bg/blacktiles.jpg);
+    --mainbgsize: 200px;
+    --space: #1a1a1a;
+    --color: #bababa;
+    --link: #00bb88;
+    --border: #5a5a5a;
+    
+    --font: arial, verdana, helvetica;
+    --h1: arial, verdana, helvetica;
+    --h1size: 2.2rem;
+    --h2: arial, verdana, helvetica;
+    --h2size: 1.6rem;
+    --h3: arial, verdana, helvetica;
+    --h3size: 1.2rem;
+    --h3space: 0;
+    --afont: arial, verdana, helvetica;
+    --aspace: 0;
+    
+    --accent: #080808;
+    --accent2: #545454;
+    --accent3: #141414;
+    
+    --ttcl: #080808;
+    --ttbg: #c6c6c6;
+    --ttbs: #0a0a0a;
+    --ttbd: #000000;
+    
+    --buttonbg: #2b2b2b;
+    --buttoncolor: white;
+    --buttonhov: #525252;
+    
+    --musicbg: url(bg/spacemtnbg.gif);
+    --backdrop: brightness(50%);
+}
+
+.light {
+    --bg: #ffffff;
+    --bgpic: url(bg/blackgridpaper.jpg);
+    --mainbg: url(bg/lightgreygrid.jpg);
+    --mainbgsize: 600px;
+    --space: #c9c9c9;
+    --color: #484848;
+    --link: #00a274;
+    --border: #b2b2b2;
+    
+    --font: arial, verdana, helvetica;
+    --h1: arial, verdana, helvetica;
+    --h1size: 2.2rem;
+    --h2: arial, verdana, helvetica;
+    --h2size: 1.6rem;
+    --h3: arial, verdana, helvetica;
+    --h3size: 1.2rem;
+    --h3space: 0;
+    --afont: arial, verdana, helvetica;
+    --aspace: 0;
+    
+    --accent: #dbdbdb;
+    --accent2: #ececec;
+    --accent3: #dadada;
+    
+    --ttcl: #e8e8e8;
+    --ttbg: #424242;
+    --ttbs: #6c6c6c;
+    --ttbd: #ffffff;
+    
+    --buttonbg: #dadada;
+    --buttoncolor: #222222;
+    --buttonhov: #bebebe;
+    
+    --musicbg: url(bg/whitesatin.jpg);
+    --backdrop: brightness(102%);
+}
+
+.red {
+    --bg: #550000;
+    --bgpic: url(bg/bloodsplatter.gif);
+    --mainbg: url(bg/skullsbg.jpg);
+    --mainbgsize: auto;
+    --space: #000000;
+    --color: #cccccc;
+    --link: #ff0000;
+    --border: #242424;
+    
+    --font: arial, verdana, helvetica;
+    --h1: arial, verdana, helvetica;
+    --h1size: 2.2rem;
+    --h2: arial, verdana, helvetica;
+    --h2size: 1.6rem;
+    --h3: arial, verdana, helvetica;
+    --h3size: 1.2rem;
+    --h3space: 0;
+    --afont: arial, verdana, helvetica;
+    --aspace: 0;
+    
+    --accent: #1a0000;
+    --accent2: #404040;
+    --accent3: #100000;
+    
+    --ttcl: #cccccc;
+    --ttbg: #420000;
+    --ttbs: #000000;
+    --ttbd: #420000;
+    
+    --buttonbg: #212121;
+    --buttoncolor: #eaeaea;
+    --buttonhov: #404040;
+    
+    --musicbg: url(bg/gatebg.png);
+    --backdrop: brightness(80%);
+}
+
+.font {
+    --font: 'Times New Roman', courier;
+    --h1: angel;
+    --h1size: 3.2rem;
+    --h2: october;
+    --h2size: 2rem;
+    --h3: haunting;
+    --h3size: 1.5rem;
+    --h3space: 0.2rem;
+    --afont: october;
+    --aspace: 0.1rem;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--bg);
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color);
+}
+
+::selection {
+    background: var(--color);
+    color: var(--space);
+}
+
+#s-m-t-tooltip{
+	/* basic */
+	max-width: 250px;
+	z-index: 999999 !important;
+	margin: 24px 14px 7px 12px;
+	/* style and design */
+    padding: 4px 8px;
+    font-family: var(--font);
+    color: var(--ttcl);
+    background: var(--ttbg);
+    box-shadow: inset 0 0 6px 4px var(--ttbs);
+    border: 1px solid var(--ttbd);
+}
+
+html {
+    background: var(--bg);
+    scrollbar-width: thin;
+    scrollbar-color: var(--color) var(--bg);
+}
+
+body {
+    background: var(--bgpic);
+    background-attachment: fixed;
+    font-family: var(--font);
+    color: var(--color);
+    margin: 0;
+}
+
+/**********************************/
+
+.container {
+    display: grid;
+    grid-template-rows: [l1] 40px [l2] 75vh [l3] 40px [l4] 30vh [l5] 40px [l6];
+    grid-template-columns: [t1] 3fr [t2] 6fr [t3] 2fr [t4];
+    grid-template-areas: 
+        "news news news"
+        "lb main nav"
+        "ast ast ast"
+        "out out out"
+        "cred cred cred";
+    
+    max-width: 1100px;
+    border: 1px solid var(--border);
+    margin: auto;
+}
+
+.newsroll {
+    grid-area: news;
+    display: flex;
+    align-items: center;
+    background: #000000;
+    border-bottom: 1px solid var(--border);
+}
+
+.leftbar {
+    grid-area: lb;
+    background: var(--space);
+    padding: 20px;
+    border-right: 1px solid var(--border);
+}
+
+main {
+    grid-area: main;
+    background: var(--mainbg);
+    background-size: var(--mainbgsize);
+    padding: 20px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color) var(--bg);
+}
+   
+.rightbar {
+    grid-area: nav;
+    background: var(--space);
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-left: 1px solid var(--border);
+    scrollbar-width: thin;
+    scrollbar-color: var(--color) var(--bg);
+}
+
+.asteroidbelt {
+    grid-area: ast;
+    display: flex;
+    align-items: center;
+    background: var(--accent3);
+    border-top: 1px solid var(--border);
+}
+
+.outerspace {
+    grid-area: out;
+    background: var(--space);
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--border);
+}
+
+.cred {
+    grid-area: cred;
+    background: var(--space);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--border);
+}
+
+/**********************************/
+
+h1 {
+    font-family: var(--h1);
+    font-size: var(--h1size);
+}
+
+h2 {
+    font-family: var(--h2);
+    font-size: var(--h2size);
+}
+
+h3 {
+    font-family: var(--h3);
+    font-size: var(--h3size);
+    letter-spacing: var(--h3space);
+}
+
+hr {
+    border: 2px groove var(--accent2);
+}
+
+a {
+    font-family: var(--afont);
+    color: var(--link);
+    letter-spacing: var(--aspace);
+}
+
+a:hover {
+    background: var(--link);
+    color: var(--space);
+}
+
+main p {
+    backdrop-filter: var(--backdrop);
+    line-height: 1.4rem;
+}
+
+button {
+    background: var(--buttonbg);
+    color: var(--color);
+    border: 2px outset var(--border);
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--buttonhov);
+    color: var(--buttoncolor);
+}
+
+button:active {
+    border: 2px inset var(--border);
+}
+
+textarea {
+    background: var(--bg);
+    color: var(--color);
+}
+
+em {
+    color: grey;
+}
+
+/**********************************/
+
+.hov:hover {
+    transform: scale(1.06);
+    transition: 0.2s ease;
+}
+
+#statuscafe {
+    display: flex;
+    align-items: center;
+    font-family: vhs;
+    line-height: 1;
+    color: #f0f0f0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px white;
+}
+
+#statuscafe-username a {
+    font-family: vhs;
+    text-decoration: none;
+}
+
+#statuscafe-content {
+    margin: 0 10px;
+}
+
+.theme-switcher {
+    display: flex;
+    justify-content: center;
+}
+
+#lastupdate {
+    color: var(--accent2);
+}
+
+.communities a, .communities img:hover {
+    background: none;
+    transform: rotate(15deg);
+}
+
+marquee img {
+    max-height: 31px;
+}
+
+.outerspace section {
+    margin: 10px;
+}
+
+#cbox {
+    min-height: 200px;
+    width: auto;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+/* music player start */
+
+#musicplayer{
+    align-content: flex-end;
+    height: 200px;
+    width: 260px;
+    background: var(--musicbg);
+    background-position: center;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    margin: 10px;
+}
+ 
+    .songtitle{
+        font-size: 18px;
+        padding: 4px;/* padding around song title */
+        /* border under song title */
+        display: block;
+    }
+ 
+    .controls{
+        font-size: 14px !important; /* size of controls */
+        background: var(--accent); /* background color of controls */
+        text-align: center;
+        width: 100%;
+    }
+ 
+    .controls td{
+        padding: 8px 2px 2px 2px; /* padding around controls */
+    }
+ 
+    .seeking{
+        background: var(--accent); /* background color of seeking bar */
+        display: flex;
+        justify-content: space-evenly;
+        padding: 6px 8px 10px 8px; /* padding around seeking bar */
+    }
+ 
+    .current-time{
+        padding-right: 8px;
+        font-size: 14px;
+    }
+ 
+    .total-duration{
+        padding-left: 8px;
+        font-size: 14px;
+    }
+ 
+    i.fa.fa-pause, i.fa.fa-play, i.fa.fa-forward, i.fa.fa-backward{
+        color: var(--color); /* color of controls */
+    }
+
+    i.fa:hover{
+        cursor: pointer;
+        color: var(--link);
+    }
+    
+    input[type=range] {
+        -webkit-appearance: none;
+        width: 100%;
+        background-color: transparent; /* background color of seeking bar - make the color same as .seeking background color */
+        cursor: pointer;
+    }
+    
+    input[type=range]:focus {
+        outline: none;
+    }
+    
+    /* settings for chrome browsers */
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 1px; /* thickness of seeking track */
+        cursor: pointer;
+        background: var(--color); /* color of seeking track */
+    }
+    
+    input[type=range]::-webkit-slider-thumb {
+        height: 6px; /* height of seeking square */
+        width: 6px; /* width of seeking square */
+        border-radius: 0px; /* change to 5px if you want a circle seeker */
+        background: var(--link); /* color of seeker square */
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -2.5px; 
+    }
+
+    input[type=range]::-webkit-slider-thumb:hover {
+        background: var(--link);
+    }
+    
+    /* settings for firefox browsers */
+    input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 1px; /* thickness of seeking track */
+        cursor: pointer;
+        background: var(--color); /* color of seeking track */
+    }
+    
+    input[type=range]::-moz-range-thumb {
+        height: 6px; /* height of seeking square */
+        width: 6px; /* width of seeking square */
+        border-radius: 0px; /* change to 5px if you want a circle seeker */
+        background: var(--link); /* color of seeker square */
+        cursor: pointer;
+        border:none;
+    }
+
+    input[type=range]::-moz-slider-thumb:hover {
+        background: var(--link);
+    }
+        /* music player end */
+
+/**********************************/
+
+@media (prefers-reduced-motion: reduce) {
+    marquee {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .container {
+        display: block;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    main {
+        overflow: hidden;
+    }
+    
+    .rightbar {
+        overflow: hidden;
+    }
+    
+    .outerspace {
+        display: block;
+        text-align: center;
+    }
+    
+    button {
+        font-size: 18px;
+    }
+    
+    #musicplayer {
+        margin: auto;
+    }
+    
+    .cred {
+        text-align: center;
+    }
+}

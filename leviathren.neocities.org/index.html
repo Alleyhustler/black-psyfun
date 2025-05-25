@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    
+::-webkit-scrollbar {
+    background-color: black;
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f8f8f8;
+}
+    
+::selection {
+    background: #202020;
+    color: white;
+}
+    
+    body {
+        background: black;
+        color: #bbbbbb;
+        margin: 0;
+        font-family: "lucida console", monospace, serif;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: [leftline] 55% [mid] auto [rightline];
+        grid-template-areas: "side main";
+        
+        height: 100vh;
+    }
+    
+    /**************************************/
+    .side {
+        grid-area: side;
+        position: relative;
+        background: url(bg/blacktiles.jpg);
+        background-size: 400px;
+        padding: 40px 50px 0 40px;
+    }
+    
+    .q {
+        font-size: 2em;
+        font-family: whiteonblack;
+        word-spacing: 4px;
+    }
+    
+    .q text {
+        background-color: black;
+        line-height: 1.4;
+        padding: 4px;
+    }
+    
+    .auth {
+        text-align: right;
+        font-family: whiteonblack;
+        font-size: 2em;
+        margin-top: 20px;
+    }
+    
+    /**************************************/
+    main {
+        grid-area: main;
+        background: url(bg/binary.gif);
+        padding: 40px;
+    }
+    
+    main section {
+        text-align: center;
+        width: 300px;
+        margin: auto;
+    }
+    
+    .one {
+        margin: 40px auto;
+    }
+    
+    #enter {
+        position: absolute;
+        top: 44%;
+        left: 55%;
+        transform: translate(-50%, 0);
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 2em;
+        transition: 1s ease;
+        color: white;
+    }
+    
+    #enter:hover {
+        transition: 0.4s ease;
+        letter-spacing: 4;
+        text-shadow: 2px 0 grey, 4px 0 #505050, 6px 0 #202020, -2px 0 grey, -4px 0 #505050, -6px 0 #202020;
+    }
+    
+    #back {
+        position: absolute;
+        top: 50%;;
+        left: 55%;
+        transform: translate(-50%, 0);
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 2em;
+        color: white;
+        transition: 1s ease;
+    }
+    
+    #back:hover {
+        transition: 0.4s ease;
+        letter-spacing: 4;
+        text-shadow: 2px 0 grey, 4px 0 #505050, 6px 0 #202020, -2px 0 grey, -4px 0 #505050, -6px 0 #202020;
+    }
+    
+    .hotline {
+        background: #252525;
+        padding: 10px 6px;
+        margin: 20px auto;
+        border: 3px outset #202020;
+        width: 200px;
+        transition: 0.5s ease;
+    }
+    
+    .hotline:hover {
+        background: #f48eb5;
+        border: 3px outset #d37497;
+    }
+    
+    .hotline a{
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-style: italic;
+    }
+    
+    .hotline a:hover {
+        color: #ffffff;
+        text-shadow: 1px 1px #f55693, 2px 2px #dd266c, 3px 3px #9b0941;
+    }
+    
+    p {
+        letter-spacing: 2;
+        line-height: 1.5;
+    }
+    
+    @media only screen and (max-width: 1000px){
+        
+        html {
+            overflow: scroll;
+            scrollbar-color: #00aa88 black;
+            scrollbar-width: thin;
+        }
+        
+        .grid {
+            display: block;
+        }
+        
+        .side {
+            display: none;
+        }
+        
+        main section {
+            max-width: 300px;
+            min-width: 180px;
+            width: auto;
+        }
+        
+        .one {
+        margin: 20px auto;
+    }
+        
+        #enter {
+            position: relative;
+            display: block;
+            transform: none;
+            top: 0;
+            left: 0;
+        }
+        
+        #back {
+            position: relative;
+            display: block;
+            transform: none;
+            top: 0;
+            left: 0;
+        }
+        
+    }
+    
+    </style>
+
+
+<!-- Mirrored from leviathren.neocities.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 May 2025 16:15:59 GMT -->
+<head>
+    
+    <title>ABYSSAL</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" type="image/png" href="decor/blacksparkle.gif">
+    
+    </head>
+    
+<body>
+    
+    <div class="grid">
+        
+        <div class="side">
+            
+            <section>
+                <div class="q"><text>"[ ACCESSING: BLACK PSYFUN PROTOCOL_ ]
+
+> Disinformation is active.  
+> You are being observed.  
+> Trust no asset. Obey no signal.
+"</text></div>
+                
+                <div class="auth">- SOLANA SHITCOINS DEEPED</div>
+            </section>
+        
+        </div>
+        
+        <main>
+            
+            <section class="one">
+                
+<p>
+    Every wallet is a node. Every meme is a weapon.
+    <br><br>
+    You were recruited the moment you looked.
+    <br><br>
+    Mindwipes are operational.
+    <br><br>
+    Disinfo flows in every direction.
+    <br><br>
+    The signal is buried in the noise — find it, or become it.
+</p>
+
+                
+            </section>
+
+            <section>
+                <p>
+                    <a id="enter" href="home.html">[ enter ]</a>
+
+                    <a id="back" href="https://neocities.org/site/leviathren">[ exit ]</a>
+                </p>
+            </section>
+
+<section class="rings">
+    <img src="4fc7fe472db154b157f037e5a21788f1.jpg" alt="black and white image of mushroom, with words 'void dot shrooms webring' above three clickable buttons: left arrow, circle, and right arrow" width="250" height="250">
+
+                    
+                    <div class="hotline">
+                        <a href="https://x.com">&#129144;</a> <a href="https://x.com">hotline Twitter</a> <a href="https://x.com">&#129146;</a>
+                    </div>
+                </section>
+            
+    </main>
+    
+        
+        
+    </div>
+    
+    </body>
+
+
+<!-- Mirrored from leviathren.neocities.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 May 2025 16:16:00 GMT -->
+</html>
